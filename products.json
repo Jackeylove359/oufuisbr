@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Microcat EPC",
+    "category": "parts",
+    "price": 1299,
+    "stock": 45,
+    "description": "Comprehensive parts catalog solution for automotive workshops.",
+    "image": "images/pro1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "PartsBridge",
+    "category": "parts",
+    "price": 899,
+    "stock": 32,
+    "description": "Seamless parts ordering and supplier integration platform.",
+    "image": "images/pro2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "ServiceConnect",
+    "category": "service",
+    "price": 1099,
+    "stock": 28,
+    "description": "Workshop service scheduling and customer management system.",
+    "image": "images/pro3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "AutoData Analytics",
+    "category": "analytics",
+    "price": 1499,
+    "stock": 19,
+    "description": "Advanced vehicle data and diagnostic reporting toolkit.",
+    "image": "images/pro4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Workshop AI Assistant",
+    "category": "ai",
+    "price": 1699,
+    "stock": 22,
+    "description": "AI-powered fault diagnosis and repair guidance tool.",
+    "image": "images/pro5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Garage POS System",
+    "category": "ecommerce",
+    "price": 799,
+    "stock": 36,
+    "description": "Point-of-sale and invoicing software for auto repair shops.",
+    "image": "images/pro6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Inventory Pro",
+    "category": "parts",
+    "price": 949,
+    "stock": 25,
+    "description": "Parts inventory tracking and stock-level management software.",
+    "image": "images/pro7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "SuperService Suite",
+    "category": "service",
+    "price": 1899,
+    "stock": 14,
+    "description": "Complete end-to-end workshop management solution bundle.",
+    "image": "images/pro8.jpg"
+  }
+]

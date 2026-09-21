@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- home.html: 首页 - Hero + Banner 轮播 + 公司简介 + 特色卡片 + 精选产品 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infomedia | Automotive Aftermarket SaaS Solutions</title>
+  <meta name="description" content="Infomedia - ASX-listed leader in automotive aftermarket software since 1987. Serving 186 countries, 50+ brands, 250,000+ users.">
+  <!-- Google Fonts: Space Grotesk(标题) + Inter(正文) + JetBrains Mono(价格) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN 图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header 挂载点（由 main.js 动态注入） -->
+  <div id="header-mount"></div>
+
+  <main>
+    <!-- ===== Hero 区域 ===== -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">
+          <i class="fa-solid fa-globe"></i> ASX Listed · IFM · Since 1987
+        </span>
+        <h1>Powering the <span class="accent">Automotive Aftermarket</span> with Intelligent SaaS</h1>
+        <p>The world's leading provider of parts catalog, ecommerce, service management, and AI solutions for the automotive aftermarket — trusted in 186 countries.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-accent btn-lg">
+            <i class="fa-solid fa-bag-shopping"></i> Shop Now
+          </a>
+          <a href="about.html" class="btn btn-outline btn-lg" style="color:#fff; border-color:rgba(255,255,255,0.4);">
+            <i class="fa-solid fa-circle-info"></i> About Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Banner 轮播图（3 张，1200×400） ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="banner-carousel" id="bannerCarousel">
+          <!-- 轮播图 1 -->
+          <div class="banner-slide active" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20automotive%20workshop%20with%20digital%20screens%20parts%20catalog%20software%20blue%20tone&image_size=landscape_16_9');">
+            <div class="banner-slide-content">
+              <h3>Microcat EPC</h3>
+              <p>The industry-standard electronic parts catalog for 50+ vehicle brands.</p>
+            </div>
+          </div>
+          <!-- 轮播图 2 -->
+          <div class="banner-slide" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=automotive%20service%20center%20technician%20tablet%20booking%20scheduling%20modern%20interface&image_size=landscape_16_9');">
+            <div class="banner-slide-content">
+              <h3>Superservice Suite</h3>
+              <p>Complete workshop management — from booking to triage to invoicing.</p>
+            </div>
+          </div>
+          <!-- 轮播图 3 -->
+          <div class="banner-slide" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=automotive%20data%20analytics%20dashboard%20charts%20business%20intelligence%20dark%20blue%20theme&image_size=landscape_16_9');">
+            <div class="banner-slide-content">
+              <h3>Infodrive Analytics</h3>
+              <p>Turn dealership data into decisions with predictive intelligence.</p>
+            </div>
+          </div>
+          <!-- 轮播指示器 -->
+          <div class="banner-dots">
+            <span class="banner-dot active"></span>
+            <span class="banner-dot"></span>
+            <span class="banner-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 公司简介 ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2>Driving Automotive Aftermarket Innovation Since 1987</h2>
+            <p>Founded in 1987 and headquartered in Sydney, Australia, Infomedia is a global leader in automotive aftermarket software solutions. We empower dealers, workshops, and parts distributors with the digital tools they need to thrive in a rapidly evolving industry.</p>
+            <p>Our SaaS platform spans parts catalogs, ecommerce, service management, data analytics, and AI assistants — all designed to streamline operations and grow revenue across the automotive aftermarket.</p>
+            <div class="stat-row">
+              <div class="stat"><strong>1987</strong><span>Founded</span></div>
+              <div class="stat"><strong>186</strong><span>Countries</span></div>
+              <div class="stat"><strong>250K+</strong><span>Users</span></div>
+            </div>
+          </div>
+          <div class="intro-image">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Infomedia%20Sydney%20headquarters%20office%20building%20modern%20automotive%20technology%20company&image_size=landscape_4_3" alt="Infomedia headquarters">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 特色卡片（3 个） ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Infomedia?</h2>
+          <p>Three decades of expertise powering the global automotive aftermarket.</p>
+          <div class="title-divider"></div>
+        </div>
+        <div class="feature-grid">
+          <!-- 卡片 1：全球 186 国 -->
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="stat">186</div>
+            <p>Countries served worldwide with localized solutions and 24/7 support across every time zone.</p>
+          </div>
+          <!-- 卡片 2：50+ 汽车品牌 -->
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-car"></i></div>
+            <div class="stat">50+</div>
+            <p>Automotive brands supported, from mass-market to luxury, with deep VIN-level parts data.</p>
+          </div>
+          <!-- 卡片 3：25 万+ 用户 -->
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="stat">250K+</div>
+            <p>Active users rely on Infomedia daily to sell parts, book service, and run their businesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 精选产品（4 个） ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Products</h2>
+          <p>Discover our most popular automotive aftermarket SaaS solutions.</p>
+          <div class="title-divider"></div>
+        </div>
+        <div class="product-grid" id="featuredGrid">
+          <!-- 由 products.js 动态渲染 -->
+          <p class="text-muted text-center">Loading products...</p>
+        </div>
+        <div class="text-center mt-4">
+          <a href="products.html" class="btn btn-primary btn-lg">
+            View All Products <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer 挂载点 -->
+  <div id="footer-mount"></div>
+
+  <!-- JS 模块加载（顺序：storage → validation → main → products） -->
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script>
+    // 首页初始化精选产品（ES7 async/await 由 products.js 处理）
+    document.addEventListener('DOMContentLoaded', () => {
+      Products.initFeaturedProducts();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- products.html: 产品商店 - 分类筛选 + 产品网格 + Modal + Lightbox + Toast -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Infomedia</title>
+  <meta name="description" content="Browse Infomedia's automotive aftermarket SaaS products: parts catalogs, ecommerce, service management, analytics, and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+  <main>
+    <!-- 页面顶部标题 -->
+    <section class="page-header">
+      <h1>Product Marketplace</h1>
+      <p>Subscribe to the automotive aftermarket's most trusted SaaS solutions</p>
+    </section>
+    <section class="section">
+      <div class="container">
+        <!-- 分类筛选按钮（由 products.js 渲染） -->
+        <div class="filter-bar" id="filterBar"></div>
+        <!-- 产品网格（4 列桌面 / 3 列平板 / 2 列手机） -->
+        <div class="product-grid" id="productGrid">
+          <p class="text-muted text-center">Loading products...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-mount"></div>
+  <!-- JS 模块加载 -->
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script>
+    // 初始化产品页（ES7 async/await）
+    document.addEventListener('DOMContentLoaded', () => {
+      Products.initProductsPage();
+    });
+  </script>
+</body>
+</html>

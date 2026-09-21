@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- support.html: 支持 - 联系信息 + FAQ + 流程图 + 支持表单 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support | Infomedia</title>
+  <meta name="description" content="Infomedia support: contact us, browse FAQs, and submit a support request.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+  <main>
+    <section class="page-header">
+      <h1>Support Center</h1>
+      <p>We're here to help you get the most from Infomedia</p>
+    </section>
+    <!-- 联系信息（带 Font Awesome 图标） -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Support</h2>
+          <p>Reach our team through any of these channels.</p>
+          <div class="title-divider"></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+61 2 9454 1500</p>
+            <p class="contact-note">Mon–Fri, 9am–6pm AEST</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <p>support@infomedia.com</p>
+            <p class="contact-note">Response within 4 hours</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Address</h4>
+            <p>Level 5, 155 Clarence Street</p>
+            <p>Sydney NSW 2000, Australia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ 问答（4 个） -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions.</p>
+          <div class="title-divider"></div>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              <span>How do I subscribe to a product?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Browse our Products page, click any product to view details, then click "Add to Cart". Visit your cart to review, apply any coupons, and place your order. You'll need to log in (use admin/admin123 for the demo) to checkout.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              <span>Which countries does Infomedia support?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Infomedia serves customers in 186 countries with localized parts data, multi-currency billing, and regional language support. Contact our sales team to confirm availability in your region.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              <span>Can I change or cancel my subscription?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes. Subscriptions are billed monthly and can be upgraded, downgraded, or cancelled at any time from your account portal. Changes take effect at the start of the next billing cycle.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              <span>Do you offer training and onboarding?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely. Every subscription includes guided onboarding, video tutorials, and access to our knowledge base. Enterprise plans include dedicated training sessions with a customer success manager.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 支持流程图（800×600，SVG 绘制） -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>How Support Works</h2>
+          <p>From your request to our response — here's the journey.</p>
+          <div class="title-divider"></div>
+        </div>
+        <!-- SVG 流程图：提交 → 接收 → 处理 → 回复 -->
+        <div class="support-flow">
+          <svg viewBox="0 0 800 600" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- 背景渐变 -->
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#1E88E5;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FF8C42;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#E6701F;stop-opacity:1" />
+              </linearGradient>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#1E88E5" />
+              </marker>
+            </defs>
+            <!-- 标题 -->
+            <text x="400" y="40" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700" fill="#0A2540">Support Request Flow</text>
+            <!-- 步骤 1: 用户提交 -->
+            <circle cx="120" cy="150" r="55" fill="url(#grad1)" />
+            <text x="120" y="145" text-anchor="middle" font-family="FontAwesome, sans-serif" font-size="28" fill="#fff">&#xf1d8;</text>
+            <text x="120" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#fff">Submit</text>
+            <text x="120" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">User submits</text>
+            <text x="120" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">a request</text>
+            <!-- 箭头 1 -->
+            <line x1="185" y1="150" x2="295" y2="150" stroke="#1E88E5" stroke-width="3" marker-end="url(#arrowhead)" />
+            <!-- 步骤 2: 系统接收 -->
+            <circle cx="360" cy="150" r="55" fill="url(#grad2)" />
+            <text x="360" y="145" text-anchor="middle" font-family="FontAwesome, sans-serif" font-size="28" fill="#fff">&#xf0e0;</text>
+            <text x="360" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#fff">Receive</text>
+            <text x="360" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">System logs</text>
+            <text x="360" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">the ticket</text>
+            <!-- 箭头 2 -->
+            <line x1="425" y1="150" x2="535" y2="150" stroke="#1E88E5" stroke-width="3" marker-end="url(#arrowhead)" />
+            <!-- 步骤 3: 支持处理 -->
+            <circle cx="600" cy="150" r="55" fill="url(#grad1)" />
+            <text x="600" y="145" text-anchor="middle" font-family="FontAwesome, sans-serif" font-size="28" fill="#fff">&#xf0ee;</text>
+            <text x="600" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#fff">Process</text>
+            <text x="600" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">Team works</text>
+            <text x="600" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">on the issue</text>
+            <!-- 向下箭头 -->
+            <line x1="600" y1="215" x2="600" y2="345" stroke="#1E88E5" stroke-width="3" marker-end="url(#arrowhead)" />
+            <!-- 步骤 4: 回复发送 -->
+            <circle cx="600" cy="400" r="55" fill="url(#grad2)" />
+            <text x="600" y="395" text-anchor="middle" font-family="FontAwesome, sans-serif" font-size="28" fill="#fff">&#xf1d9;</text>
+            <text x="600" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#fff">Reply</text>
+            <text x="600" y="480" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">Solution sent</text>
+            <text x="600" y="498" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D">to the user</text>
+            <!-- 向左箭头回环 -->
+            <path d="M 545 400 Q 360 400 360 400 L 175 400" stroke="#1E88E5" stroke-width="3" fill="none" stroke-dasharray="6 4" marker-end="url(#arrowhead)" />
+            <!-- 闭环说明 -->
+            <text x="360" y="395" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#5A6B7D" font-style="italic">Feedback loop closes the cycle</text>
+            <!-- 底部说明 -->
+            <text x="400" y="560" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#0A2540" font-weight="600">Average response time: under 4 hours</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- 支持表单（保存到 localStorage） -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Submit a Support Request</h2>
+          <p>Tell us how we can help. We'll get back to you within 4 hours.</p>
+          <div class="title-divider"></div>
+        </div>
+        <div class="support-form-wrap">
+          <form id="supportForm" onsubmit="event.preventDefault(); Support.submitSupportForm();">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Name <span class="required">*</span></label>
+                <input type="text" class="form-control" id="supportName" placeholder="Your full name"
+                       oninput="Validation.clearFieldError('supportName')">
+              </div>
+              <div class="form-group">
+                <label>Email <span class="required">*</span></label>
+                <input type="email" class="form-control" id="supportEmail" placeholder="you@dealer.com"
+                       oninput="Validation.clearFieldError('supportEmail')">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message <span class="required">*</span></label>
+              <textarea class="form-control" id="supportMessage" placeholder="Describe your issue or question..."
+                        oninput="Validation.clearFieldError('supportMessage')"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Submit Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-mount"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /**
+     * 支持页面表单提交逻辑（内联脚本，使用 ES6+ 特性）
+     */
+    const Support = {
+      // 提交支持表单（ES6 解构 + 验证 + localStorage 存储）
+      submitSupportForm: () => {
+        // ES6: 收集表单值
+        const name = document.getElementById('supportName').value.trim();
+        const email = document.getElementById('supportEmail').value.trim();
+        const message = document.getElementById('supportMessage').value.trim();
+        // ES6: 统一表单验证
+        const isValid = Validation.validateForm([
+          { fieldId: 'supportName', value: name, type: 'required', message: 'Name is required' },
+          { fieldId: 'supportEmail', value: email, type: 'email', message: 'Please enter a valid email' },
+          { fieldId: 'supportMessage', value: message, type: 'required', message: 'Message is required' }
+        ]);
+        if (!isValid) return;
+        // 保存到 localStorage（ES6 展开运算符）
+        Storage.addSupportTicket({ name, email, message });
+        Main.showToast('Support request submitted! We will respond within 4 hours.', 'success');
+        // 重置表单
+        document.getElementById('supportForm').reset();
+      }
+    };
+    window.Support = Support;
+  </script>
+</body>
+</html>

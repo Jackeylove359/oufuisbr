@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- cart.html: 购物车 - 商品列表 + 登录 + 订单汇总(GST/运费/优惠券) + 下单 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Infomedia</title>
+  <meta name="description" content="Review your cart, apply coupons, and checkout for Infomedia SaaS subscriptions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+
+  <main>
+    <section class="page-header">
+      <h1>Shopping Cart</h1>
+      <p>Review your subscriptions and checkout</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- 购物车布局：左侧商品列表 + 右侧订单汇总 -->
+        <div class="cart-layout">
+          <!-- 左侧：登录框 + 购物车商品 -->
+          <div>
+            <!-- 客户登录区（由 cart.js renderLoginStatus 动态渲染） -->
+            <div class="login-box" id="loginBox"></div>
+
+            <!-- 购物车商品列表（由 cart.js renderCartItems 动态渲染） -->
+            <div class="cart-items" id="cartItems"></div>
+
+            <!-- 购物车操作按钮 -->
+            <div class="summary-actions mt-3" id="cartActions">
+              <button class="btn btn-ghost" onclick="Cart.updateCart()">
+                <i class="fa-solid fa-rotate"></i> Update Cart
+              </button>
+              <button class="btn btn-danger" onclick="Cart.clearCartWithConfirm()">
+                <i class="fa-solid fa-trash"></i> Clear Cart
+              </button>
+              <a href="products.html" class="btn btn-outline">
+                <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+              </a>
+            </div>
+          </div>
+
+          <!-- 右侧：订单汇总（由 cart.js renderOrderSummary 动态渲染） -->
+          <div class="order-summary" id="orderSummary"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-mount"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    // 初始化购物车页
+    document.addEventListener('DOMContentLoaded', () => {
+      Cart.initCartPage();
+    });
+  </script>
+</body>
+</html>
